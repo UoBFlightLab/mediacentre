@@ -1,4 +1,4 @@
--i /dev/video0
--input_format mjpeg -video_size 3840x2160 -i /dev/video2
+-i /dev/video10
+-input_format mjpeg -video_size 3840x2160 -i /dev/video0
 -input_format mjpeg -video_size 3840x2160 -i /dev/video6
--framerate 30 -i /dev/video10
+-framerate 30 -i /dev/video4
