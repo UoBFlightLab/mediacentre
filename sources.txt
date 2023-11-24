@@ -1,4 +1,8 @@
+# integrated webcam
 -i /dev/video10
+# BRIO
 -input_format mjpeg -video_size 3840x2160 -i /dev/video0
+# BRIO
 -input_format mjpeg -video_size 3840x2160 -i /dev/video6
+# UVCHDCAP
 -framerate 30 -i /dev/video4
