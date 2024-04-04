@@ -1,5 +1,6 @@
 stream_id=0
-file_stub=video-$(date +"%Y-%m-%d-%H-%M-%S")
+mkdir -p raw
+file_stub=raw/video-$(date +"%Y-%m-%d-%H-%M-%S")
 cat sources.txt | grep -v '^#' | while read line
 do
   ffmpeg -v 0 $line -vcodec copy -an $file_stub-src$stream_id.mkv &

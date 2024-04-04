@@ -1,5 +1,9 @@
+mkdir -p arch
+mkdir -p proc
+cd raw
 for f in *.mkv
 do
-  ffmpeg -n -i $f $f.mp4
+  ffmpeg -y -i $f ../proc/$f.mp4 && mv $f ../arch
 done
+cd ..
 

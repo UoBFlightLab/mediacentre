@@ -1,9 +1,7 @@
 #automatic device settings using get_source.sh
 #BRIO
--input_format mjpeg -video_size 3840x2160 -i /dev/video0
--input_format mjpeg -video_size 3840x2160 -i /dev/video8
 #UVCHDCAP
--framerate 30 -i /dev/video14
--framerate 30 -i /dev/video12
+-framerate 30 -i /dev/video0
+-framerate 30 -i /dev/video10
 #Integrated
--framerate 30 -i /dev/video4
+-framerate 30 -i /dev/video2
